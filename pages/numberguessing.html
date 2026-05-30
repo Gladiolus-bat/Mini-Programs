@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,49 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        nav {
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+            background-color: hsl(97, 58%, 70%);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
         input {
             padding: 10px;
             font-size: 16px;
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
             margin-left: 10px;
         }
+
         #feedback {
             margin-top: 20px;
             font-size: 18px;
-        }    
-        </style>
+        }
+    </style>
 </head>
 
 <body>
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
+
     <h1>Number Guessing Game</h1>
     <p>Guess a number between 1 and 100:</p>
     <input type="number" id="guessInput" min="1" max="100">
@@ -34,4 +61,5 @@
     <p id="feedback"></p>
     <script src="../scripts/numberGuessing.js"></script>
 </body>
+
 </html>

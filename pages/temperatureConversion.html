@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,25 @@
         body {
             font-family: Arial, sans-serif;
             background-color: hsl(0, 0%, 95%);
+        }
+
+        nav {
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+            background-color: hsl(97, 58%, 70%);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #000;
         }
 
         h1 {
@@ -60,8 +80,12 @@
         }
     </style>
 </head>
+
 <body>
-    
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
+
     <form>
         <h1>Temperature Conversion</h1>
         <input type="number" id="textBox" value="0"><br>
@@ -85,13 +109,13 @@
         let temp;
 
         function convertTemperature() {
-            if(toFahrenheit.checked) {
+            if (toFahrenheit.checked) {
                 temp = Number(textBox.value);
-                temp = (temp * 9/5) + 32;
+                temp = (temp * 9 / 5) + 32;
                 result.textContent = temp.toFixed(1) + "°F";
-            } else if(toCelsius.checked) {
+            } else if (toCelsius.checked) {
                 temp = Number(textBox.value);
-                temp = (temp - 32) * 5/9;
+                temp = (temp - 32) * 5 / 9;
                 result.textContent = temp.toFixed(1) + "°C";
             } else {
                 result.textContent = 'Please select a conversion type.';
@@ -99,4 +123,5 @@
         }
     </script>
 </body>
+
 </html>
