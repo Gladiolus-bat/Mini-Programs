@@ -2,11 +2,11 @@ h1 {
     font-size: 3em;
     text-align: center;
     margin-top: 20px;
-    color: hsl(92, 37%, 43%);
+    color: hsl(90, 1%, 29%);
 }
 
 h2 {
-    color: hsl(92, 37%, 43%);
+    color: hsl(92, 17%, 54%);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -25,7 +25,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(92, 37%, 90%);
+    background-color: hsl(40, 11%, 89%);
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -40,10 +40,16 @@ h2 {
     margin-bottom: 15px;
 }
 
+.program p {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
 .program a {
     margin-top: auto;
     padding: 10px 20px;
-    background-color: hsl(92, 42%, 43%);
+    background-color: hsl(48, 21%, 59%);
     color: #333;
     text-decoration: none;
     border-radius: 4px;
@@ -54,5 +60,5 @@ h2 {
 }
 
 .program a:hover {
-    background-color: hsl(92, 58%, 70%);
+    background-color: hsl(48, 21%, 70%);
 }
