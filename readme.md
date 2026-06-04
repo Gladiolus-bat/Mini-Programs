@@ -1,4 +1,4 @@
-# JavaScript Mini Projects Collection
+# JavaScript Mini Programs Collection
 
 ## Overview
 
